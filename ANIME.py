@@ -1,9 +1,7 @@
 ###----------[ IMPORT MODULE LAIN ]---------- ###
-import os, sys, re, time, requests, calendar, random, bs4, uuid, json, subprocess, base64
-from concurrent.futures import ThreadPoolExecutor
-from bs4 import BeautifulSoup as parser
-from datetime import date,datetime
-from requests.exceptions import ConnectionError
+dhhdhdhdhfrom concurrent.futukonhhjcks import ThreadPoolExecutor
+dhhdhdhdhdbxhxfrom datetime import date,datetime
+from requests.exceptions dhhdhdhdhdb ConnectionError
 ses = requests.Session()
 
 ###----------[ IMPORT MODULE RICH ]---------- ###
