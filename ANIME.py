@@ -16,7 +16,7 @@ from rich.columns import Columns
 from rich.progress import Progress,SpinnerColumn,BarColumn,TextColumn,TimeElapsedColumn
 console = Console()
 
-###----------[ WARNA PRINT RICH ]---------- ###
+###----------[ WARNA PRINT ]---------- ###
 M2 = "[#FF0000]" # MERAH
 H2 = "[#00FF00]" # HIJAU
 K2 = "[#FFFF00]" # KUNING
