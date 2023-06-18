@@ -47,14 +47,14 @@ versi_app = str(random.randint(111111111,999999999))
 for z in range(200):
 	versi_android = str(random.randint(4,13))+".0.0"
 	versi_chrome = str(random.randint(300,445))+".0.0."+str(random.randint(1,8))+"."+str(random.randint(40,150))
-	device = random.choice(["SM-N975F Build/NHG47L","SM-J320FN Build/LMY47V","SM-N750K Build/N4F26T","SM-A715W Build/OPM5.171019.014","SM-A908N Build/OPR6.170623.023","SM-N986B Build/OPM5.171019.015","SM-G988U Build/MMB29K","SM-A207F Build/OPM6.171019.030.H1"])
+	device = random.choice(["SM-N975F Build/NHG47L","SM-J320FN Build/LMY47V","SM-S911B Build/N4F26T","SM-A715W Build/OPM5.171019.014","SM-A908N Build/OPR6.170623.023","SM-N986B Build/OPM5.171019.015","SM-G988U Build/MMB29K","SM-A207F Build/OPM6.171019.030.H1"])
 	dev = device.split(" Build/")[0]
 	az = "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"
 	build = f"{random.choice(az)}{random.choice(az)}{random.choice(az)}{random.randint(10, 90)}{random.choice(az)}"
 	versi = random.choice(["10_0_2","10_1_1","10_2","10_2_1","10_3_1","10_3_2","10_3_3"])
 	verchrome = random.choice(["602.1.50","602.2.14","602.3.12","602.4.6","603.1.30","603.2.4","603.3.8","601.1.46"])
 	mob = random.choice(["14A456","14B100","14C92","14D27","14E304","14F89","14G60","13C75","13D15","13E233","13E238","13F69","13G34","13G36"])
-	ua = f"Mozilla/5.0 (Linux; Android {versi_android}; SM-S911B Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{versi_chrome} Mobile Safari/537.36[FBAN/EMA;FBLC/de_DE;FBAV/358.0.0.8.62.{str(random.randint(100000, 900000))};]"
+	ua = f"[FBAN/MessengerLite;FBAV/{versi_chrome};FBPN/com.facebook.mlite;FBLC/en_US;FBBV/{versi_app};FBCR/Airtel;FBMF/Facebook/lge;FBBD/FEVER;FBDV/FEVER;FBSV/{versi_android};FBCA/armeabi-v7a:armeabi;FBDM/"+"{density=2.75,width=1080,height=2179};FB_FW/1;]"
 	
 	if ua in ugent:pass
 	else:ugent.append(ua)
@@ -738,9 +738,7 @@ class Session:
 		return ugent		
 		
 if __name__=="__main__":
-	try:os.system('git pull')
-	except:pass
-	try:os.system('pkg install play-audio')
+        try:os.system('pkg install play-audio')
 	except:pass
 	try:os.mkdir("OK")
 	except:pass
