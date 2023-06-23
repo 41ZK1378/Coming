@@ -47,14 +47,14 @@ versi_app = str(random.randint(111111111,999999999))
 for z in range(200):
 	versi_android = str(random.randint(4,12))+".0.0"
 	versi_chrome = str(random.randint(300,445))+".0.0."+str(random.randint(1,8))+"."+str(random.randint(40,150))
-	device = random.choice(["TECNO LB7 Build/O11019","TECNO KH7 Build/LMY47V","TECNO CD6j Build/N4F26T","TECNO BE7 Build/OPM5.171019.014","TECNO BE6j Build/OPR6.170623.023","TECNO KC1h Build/OPM5.171019.015","TECNO KG5p Build/MMB29K","TECNO KF6i Build/OPM6.171019.030.H1"])
+	device = random.choice(["M2006C3LG Build/O11019","M2006C3LI Build/LMY47V","M2006C3LC Build/N4F26T","M2004C3L Build/OPM5.171019.014","Xiaomi M2006C3LG Build/OPR6.170623.023","Redmi M2006C3LG Build/OPM5.171019.015","Redmi 9a Build/MMB29K","Xiaomi Redmi 9a Build/OPM6.171019.030.H1"])
 	dev = device.split(" Build/")[0]
 	az = "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"
 	build = f"{random.choice(az)}{random.choice(az)}{random.choice(az)}{random.randint(10, 90)}{random.choice(az)}"
 	versi = random.choice(["10_0_2","10_1_1","10_2","10_2_1","10_3_1","10_3_2","10_3_3"])
 	verchrome = random.choice(["602.1.50","602.2.14","602.3.12","602.4.6","603.1.30","603.2.4","603.3.8","601.1.46"])
 	mob = random.choice(["14A456","14B100","14C92","14D27","14E304","14F89","14G60","13C75","13D15","13E233","13E238","13F69","13G34","13G36"])
-	ua = f"Mozilla/5.0 (Linux; Android {versi_android}; TECNO RC6 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{versi_chrome} Mobile Safari/537.36[FBAN/EMA;FBLC/fr_FR;FBAV/280.0.0.9.119.{str(random.randint(100000, 900000))};]"
+	ua = f"Mozilla/5.0 (Linux; Android {versi_android}; M2006C3LG Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{versi_chrome} Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/418.0.0.33.69.{str(random.randint(100000, 900000))};]"
 	
 	if ua in ugent:pass
 	else:ugent.append(ua)
